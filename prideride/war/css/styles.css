@@ -91,6 +91,10 @@ p {
     color: #9c27b0;
 }
 
+.text-highlight {
+    color: #fff;
+}
+
 .modal-content {
     background-color: #1d1d1d;
 }
@@ -249,7 +253,7 @@ header .header-content {
     z-index: 2;
 }
 
-header .header-content .inner h1 {
+header .header-content .inner h1,h3{
     margin-top: 0;
     margin-bottom: 0;
 }
