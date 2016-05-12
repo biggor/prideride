@@ -28,7 +28,7 @@ public class GetFundraisingTotal extends HttpServlet {
 		resp.getWriter().println("Victor and Mark: " + getAmountRaised("https://www.canadahelps.org/en/pages/victor-and-marks-pride-ride/"));
 		resp.getWriter().println("Calvin: " + getAmountRaised("https://www.canadahelps.org/en/pages/calvins-pride-ride/"));
 		resp.getWriter().println("Billy: " + getAmountRaised("https://www.canadahelps.org/en/pages/billys-pride-ride/"));
-		resp.getWriter().println("Frank: " + "?");
+		resp.getWriter().println("Frank: " + getAmountRaised("https://www.canadahelps.org/en/pages/pride-ride-4/"));
 		
 		
 		resp.getWriter().println("-------------------");
