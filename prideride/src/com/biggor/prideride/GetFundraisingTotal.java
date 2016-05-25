@@ -19,6 +19,8 @@ public class GetFundraisingTotal extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/plain");
 		
+		total= 0;
+		
 		resp.getWriter().println("Rodney: " + getAmountRaised("https://www.canadahelps.org/en/pages/priderideorg/"));
 		resp.getWriter().println("Gary: " + getAmountRaised("https://www.canadahelps.org/en/pages/pride-ride-3/"));
 		resp.getWriter().println("Glenn: " + getAmountRaised("https://www.canadahelps.org/en/pages/pride-ride-2/"));
