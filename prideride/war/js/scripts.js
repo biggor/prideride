@@ -1,3 +1,12 @@
+$(document).ready(function() {
+	console.log("here...");
+	$.getJSON('getfundraisingtotal', function(jsonData) {
+		console.log("here2...");
+		console.log(jsonData);
+	    $('#totalRaised').html("$" + (jsonData.totalRaised ? jsonData.totalRaised : "n/a"));
+	});
+});
+
 (function($) {
     "use strict";
 
@@ -30,5 +39,5 @@
     $('#galleryModal').on('show.bs.modal', function (e) {
        $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
     });
-
+    
 })(jQuery);
