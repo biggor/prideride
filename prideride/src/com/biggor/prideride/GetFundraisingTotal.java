@@ -56,7 +56,7 @@ public class GetFundraisingTotal extends HttpServlet {
 			getAmountRaised("https://www.canadahelps.org/en/pages/pride-ride-4/");
 			getAmountRaised("https://www.canadahelps.org/en/pages/pride-ride-5/");
 
-			jsonTotalRaised = "{\"totalRaised\":\""  + (total + 10325) + "\"}";
+			jsonTotalRaised = "{\"totalRaised\":\""  + (total + 10325 + 500) + "\"}";
 			memcache.put("totalRaised", jsonTotalRaised, Expiration.byDeltaSeconds(3600));
 		}
 		out.println(jsonTotalRaised);
